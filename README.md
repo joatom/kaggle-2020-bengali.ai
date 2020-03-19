@@ -158,3 +158,4 @@ The Recall-Metric was also taken from [here](https://www.kaggle.com/iafoss/graph
   - https://pytorch.org/docs/stable/torchvision/models.html
   - https://github.com/Cadene/pretrained-models.pytorch
   - https://github.com/lukemelas/EfficientNet-PyTorch
+- SE-Block: https://github.com/osmr/imgclsmob/blob/master/pytorch/pytorchcv/models/common.py
