@@ -136,55 +136,53 @@ As a three head loss function I used [this](https://www.kaggle.com/iafoss/graphe
 The Recall-Metric was also taken from [here](https://www.kaggle.com/iafoss/grapheme-fast-ai-starter-lb-0-964)
 
 ## Scores
-<table border=0 cellpadding=0 cellspacing=0 width=269 style='border-collapse:
- collapse;table-layout:fixed;width:269pt'>
- <col width=74 style='mso-width-source:userset;mso-width-alt:3157;width:74pt'>
- <col width=65 span=3 style='width:65pt'>
- <tr height=15 style='height:15.0pt'>
-  <td height=15 class=xl65 width=74 style='height:15.0pt;width:74pt'>&nbsp;</td>
-  <td class=xl65 width=65 style='border-left:none;width:65pt'>CV</td>
-  <td class=xl65 width=65 style='border-left:none;width:65pt'>public LB</td>
-  <td class=xl65 width=65 style='border-left:none;width:65pt'>private LB</td>
- </tr>
- <tr height=15 style='height:15.0pt'>
-  <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Model 1</td>
-  <td class=xl67 style='border-top:none;border-left:none'>0.971590</td>
-  <td class=xl67 style='border-top:none;border-left:none'><span>0.9647</span></td>
-  <td class=xl67 style='border-top:none;border-left:none'><span>0.9327</span></td>
- </tr>
- <tr height=15 style='height:15.0pt'>
-  <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Model 2</td>
-  <td class=xl67 style='border-top:none;border-left:none'>0.971113</td>
-  <td class=xl67 style='border-top:none;border-left:none'><span>0.9631</span></td>
-  <td class=xl67 style='border-top:none;border-left:none'><span>0.9283</span></td>
- </tr>
- <tr height=15 style='height:15.0pt'>
-  <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Model 3</td>
-  <td class=xl67 style='border-top:none;border-left:none'>0.971588</td>
-  <td class=xl67 style='border-top:none;border-left:none'><span>0.9655</span></td>
-  <td class=xl68 style='border-top:none;border-left:none'><span>0.9347</span></td>
- </tr>
- <tr height=15 style='height:15.0pt'>
-  <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Model 4</td>
-  <td class=xl68 style='border-top:none;border-left:none'>0.992645</td>
-  <td class=xl67 style='border-top:none;border-left:none'><span>0.9638</span></td>
-  <td class=xl67 style='border-top:none;border-left:none'><span>0.9182</span></td>
- </tr>
- <tr height=16 style='height:16.0pt'>
-  <td height=16 class=xl69 style='height:16.0pt;border-top:none'>Model 5</td>
-  <td class=xl70 style='border-top:none;border-left:none'>0.971168</td>
-  <td class=xl74 style='border-top:none;border-left:none'><span>0.9659</span></td>
-  <td class=xl70 style='border-top:none;border-left:none'><span>0.9344</span></td>
- </tr>
- <tr height=17 style='height:17.0pt'>
-  <td height=17 class=xl71 style='height:17.0pt'>Ensemble</td>
-  <td class=xl72 style='border-left:none'>-</td>
-  <td class=xl73 style='border-left:none'><span>0.9683</span></td>
-  <td class=xl73 style='border-left:none'><span>0.9360</span></td>
- </tr>
- <tr height=16 style='height:16.0pt'>
-  <td height=16 colspan=4 style='height:16.0pt;mso-ignore:colspan'></td>
- </tr>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>&nbsp;</th>
+      <th>CV</td>
+      <th>public LB</td>
+      <th>private LB</td>
+    </tr>
+ </thead>
+ <tbody>
+   <tr>
+    <th>Model 1</th>
+    <td>0.971590</td>
+    <td>0.9647</td>
+    <td>0.9327</td>
+   </tr>
+   <tr>
+    <th>Model 2</th>
+    <td>0.971113</td>
+    <td>0.9631</td>
+    <td>0.9283</td>
+   </tr>
+   <tr>
+    <th>Model 3</th>
+    <td>0.971588</td>
+    <td>0.9655</td>
+    <th>0.9347</th>
+   </tr>
+   <tr>
+    <th>Model 4</th>
+    <th>0.992645</th>
+    <td>0.9638</td>
+    <td>0.9182</td>
+   </tr>
+   <tr>
+    <th>Model 5</th>
+    <td>0.971168</td>
+    <th>0.9659</th>
+    <td>0.9344</td>
+   </tr>
+   <tr>
+    <th>Ensemble</th>
+    <td>-</td>
+    <th>0.9683</th>
+    <th>0.9360</th>
+   </tr>
+ </tbody>
 </table>
 
 
