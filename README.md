@@ -1,6 +1,6 @@
 # kaggle-2020-bengali.ai
 
-This repository contains some of my codings for the 2020 kaggle Bengali.AI competition (https://www.kaggle.com/c/bengaliai-cv19).
+This repository contains some of my codings for the 2020 kaggle Bengali.AI competition (https://www.kaggle.com/c/bengaliai-cv19) which took place from Jan/20 to Mar/20.
 
 My submission scored **[78st Place](https://www.kaggle.com/c/bengaliai-cv19/leaderboard) out of 1955** which results in a silver medal.
 
