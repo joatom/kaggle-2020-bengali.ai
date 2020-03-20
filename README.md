@@ -10,7 +10,7 @@ The train set contains 200840. The hidden test set is about the same size. The h
 ## Solution Design
 
 ### Image preperation
-The images are croped, scaled to fill the entire image size and resized (224x224) following this [notebook](https://www.kaggle.com/maxlenormand/cropping-to-character-resizing-images). Another cropping and centering variation without scaling from [here](https://www.kaggle.com/iafoss/image-preprocessing-128x128) didn't work as well for my model. I also run experiments with original images, several image sizes, color inversion and another .   
+The images are croped, scaled to fill the entire image size and resized (128x128) following this [notebook](https://www.kaggle.com/maxlenormand/cropping-to-character-resizing-images). Another cropping and centering variation without scaling from [here](https://www.kaggle.com/iafoss/image-preprocessing-128x128) didn't work as well for my model. I also run experiments with original images, several image sizes, color inversion and another .   
 
 ### Augmentation
 Slightly modified default transformation from fastai'
@@ -131,6 +131,9 @@ This solution consists of five models which are ensembled using majority vote. A
 - Model 3: pretrained and modified resnext101_32x8d (from [torchvision.models](https://pytorch.org/docs/stable/torchvision/models.html)), trained for 2 x 10 epochs (fit_one_cycle)
 - Model 4: pretrained and modified efficientnet-b2 (from [lukemelas EfficientNet](https://github.com/lukemelas/EfficientNet-PyTorch)), trained for 120 epochs + 3 epochs (fit_one_cycle)
 - Model 5: pretrained and modified efficientnet-b4 (from [lukemelas EfficientNet](https://github.com/lukemelas/EfficientNet-PyTorch)), trained for 2 x 10 epochs (fit_one_cycle)
+The most experiments were done with the resnext50 model. The difference between training for 10 compared to 100 epochs were tiny, therefore I sticked mostly to 10 epochs training for more experiments in the same time.
+As a three head loss function I used [this](https://www.kaggle.com/iafoss/grapheme-fast-ai-starter-lb-0-964#Loss) version with the heads weighted like this: GR = 0.5, VC = 0.25, DC = 0.25. Experiments with a cosine distance loss function failed.
+The Recall-Metric was also taken from [here](https://www.kaggle.com/iafoss/grapheme-fast-ai-starter-lb-0-964)
 
 ## Scores
 
@@ -150,7 +153,9 @@ This solution consists of five models which are ensembled using majority vote. A
 - Image Preprocessing: 
   - https://www.kaggle.com/maxlenormand/cropping-to-character-resizing-images
   - https://www.kaggle.com/iafoss/image-preprocessing-128x128
+- MixUp, Recall-Metric and Loss Funciton: https://www.kaggle.com/iafoss/grapheme-fast-ai-starter-lb-0-964
 - Pretrained Models
   - https://pytorch.org/docs/stable/torchvision/models.html
   - https://github.com/Cadene/pretrained-models.pytorch
   - https://github.com/lukemelas/EfficientNet-PyTorch
+- SE-Block: https://github.com/osmr/imgclsmob/blob/master/pytorch/pytorchcv/models/common.py
